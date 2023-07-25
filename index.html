@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="drag.js"></script>
+</head>
+<body>
+    <div class="board">
+        <form id="todo-form">
+            <input type="text" placeholder="new task..." id="todo-input">
+            <button type="submit">Tambah</button>
+        </form>
+        <div class="lanes">
+            <div class="swim-lane" id="todo-lane" >
+                <h3 class="heading">TODO</h3>
+                <p class="task" draggable="true"> Drag here</p>
+            </div>
+            <div class="swim-lane" id="todo-lane" >
+                <h3 class="heading">PROSESS</h3>
+                <p class="task" draggable="true"> Drag here</p>
+            </div>
+            <div class="swim-lane" id="todo-lane" >
+                <h3 class="heading">SELESAI</h3>
+                <p class="task" draggable="true"> Drag here</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
